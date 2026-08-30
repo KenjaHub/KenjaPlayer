@@ -10,9 +10,9 @@
   --line-soft: #1d1d21;
   --card: #161618;
   --card-2: #1d1d20;
-  --vio: #ff375f;
-  --vio-2: #ff7d95;
-  --vio-soft: rgba(255, 55, 95, 0.13);
+  --vio: #ff9f0a;
+  --vio-2: #ffb340;
+  --vio-soft: rgba(255, 159, 10, 0.12);
   --radius: 22px;
   --font-d: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "PingFang SC", "Segoe UI", sans-serif;
   --font-m: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
 }
 
-::selection { background: rgba(255, 55, 95, 0.35); }
+::selection { background: rgba(255, 159, 10, 0.35); }
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -157,7 +157,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   padding: 88px 0 64px;
   text-align: center;
   background:
-    radial-gradient(820px 420px at 50% -8%, rgba(255, 55, 95, 0.09), transparent 62%),
+    radial-gradient(820px 420px at 50% -8%, rgba(255, 159, 10, 0.09), transparent 62%),
     var(--bg);
 }
 .hero .cue { justify-content: center; }
@@ -223,7 +223,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: var(--vio);
-  box-shadow: 0 0 0 4px rgba(255, 55, 95, 0.18);
+  box-shadow: 0 0 0 4px rgba(255, 159, 10, 0.18);
 }
 
 /* ---------- sections ---------- */
@@ -286,7 +286,7 @@ section.block.alt { background: var(--bg-alt); }
   overflow: hidden;
   border: 1px solid var(--line);
   background:
-    radial-gradient(120% 120% at 50% 0%, #2b1a22 0%, #101014 55%),
+    radial-gradient(120% 120% at 50% 0%, #2b2114 0%, #101012 55%),
     #101016;
   padding: 36px 28px 30px;
   color: #f4f2ec;
@@ -306,7 +306,7 @@ section.block.alt { background: var(--bg-alt); }
   color: #fff;
 }
 .srt-block .srt-dst mark {
-  background: rgba(255, 55, 95, 0.32);
+  background: rgba(255, 159, 10, 0.32);
   color: #cfc8ff;
   padding: 0 3px;
   border-radius: 4px;
@@ -538,7 +538,7 @@ details.faq .faq-a a { font-weight: 500; }
   color: var(--mut);
   background: var(--card);
 }
-.lang-wall span.hot { border-color: rgba(255, 55, 95, 0.5); color: var(--vio-2); background: var(--vio-soft); }
+.lang-wall span.hot { border-color: rgba(255, 159, 10, 0.5); color: var(--vio-2); background: var(--vio-soft); }
 
 /* cross links */
 .xlinks { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
