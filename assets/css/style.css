@@ -79,6 +79,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .brand:hover { text-decoration: none; }
 .brand svg { flex: none; }
+.brand img { border-radius: 22%; display: block; flex: none; }
 .nav { display: none; align-items: center; gap: 2px; margin-left: auto; }
 .nav a {
   color: var(--ink);
