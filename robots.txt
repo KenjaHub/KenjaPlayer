@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kenjahub.github.io/KenjaPlayer/sitemap.xml
+Sitemap: https://kenjaplayer.kofukuai.com/sitemap.xml
