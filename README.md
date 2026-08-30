@@ -4,9 +4,9 @@
 
 # KenjaPlayer
 
-**Real-time AI subtitles for any video — 100% on your device.**
+**Real-Time AI Bilingual Subtitles for Any Video — 100% on your device.**
 
-Watch any movie, show or lecture in any language: KenjaPlayer listens, transcribes and translates live, entirely offline. A first-class player even with the AI switched off.
+Watch any movie, show or lecture in any language: KenjaPlayer listens, transcribes and translates live into bilingual subtitles, entirely offline. A first-class player even with the AI switched off.
 
 [![Download on the App Store](assets/img/appstore-badge.svg)](https://apps.apple.com/app/id6792728329)
 
