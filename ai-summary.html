@@ -8,7 +8,7 @@
   <meta name="description" content="Turn two-hour videos into seconds: KenjaPlayer transcribes any video and summarizes it into a clickable chapter timeline. Export as SRT or Markdown.">
   <link rel="canonical" href="https://kenjaplayer.kofukuai.com/ai-summary.html">
   <meta property="og:site_name" content="KenjaPlayer">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="AI Video Summarizer with Timestamps | KenjaPlayer">
   <meta property="og:description" content="Transcribe and summarize any video into a clickable chapter timeline — 100% on-device.">
   <meta property="og:url" content="https://kenjaplayer.kofukuai.com/ai-summary.html">
@@ -34,6 +34,26 @@
         "url": "https://kenjaplayer.kofukuai.com/ai-summary.html",
         "description": "Transcribe and summarize any video into a clickable chapter timeline, entirely on-device.",
         "isPartOf": { "@id": "https://kenjaplayer.kofukuai.com/#website" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What kinds of videos does it summarize?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Anything with understandable speech — lectures, talks, podcasts, streams, tutorials, long interviews. Point it at a file or a video from one of your media servers and go." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do summaries need Apple Intelligence?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — summaries use Apple's on-device Foundation Models. Live AI subtitles and translation work on all supported devices regardless; only summarization requires Apple Intelligence." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long can a video be?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Summaries are built chapter-by-chapter in rolling passes rather than in one shot, so multi-hour videos are handled gracefully." }
+          }
+        ]
       }
     ]
   }
@@ -70,7 +90,7 @@
 </header>
 
 <main>
-  <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="./index.html">index</a><span class="sep">/</span>ai-summary</nav></div>
+  <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="./index.html">Home</a><span class="sep">/</span>ai-summary</nav></div>
 
   <section class="sub-hero">
     <div class="wrap">

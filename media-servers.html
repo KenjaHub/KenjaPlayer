@@ -8,7 +8,7 @@
   <meta name="description" content="Stream straight from Jellyfin, Plex, Emby, SMB, WebDAV and FTP — direct connections only, credentials stay on your device. With live AI subtitles on top.">
   <link rel="canonical" href="https://kenjaplayer.kofukuai.com/media-servers.html">
   <meta property="og:site_name" content="KenjaPlayer">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Jellyfin &amp; Plex Client for iOS, Mac, Apple TV | KenjaPlayer">
   <meta property="og:description" content="Jellyfin, Plex, Emby, SMB, WebDAV and FTP streaming — direct, private, with live AI subtitles.">
   <meta property="og:url" content="https://kenjaplayer.kofukuai.com/media-servers.html">
@@ -34,6 +34,26 @@
         "url": "https://kenjaplayer.kofukuai.com/media-servers.html",
         "description": "Direct streaming from Jellyfin, Plex, Emby, SMB, WebDAV and FTP with on-device AI subtitles.",
         "isPartOf": { "@id": "https://kenjaplayer.kofukuai.com/#website" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does KenjaPlayer work as a Jellyfin client on Apple TV?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — KenjaPlayer runs on Apple TV (tvOS 18+) with Jellyfin, Plex, SMB, WebDAV and FTP support, plus on-device Whisper models for AI subtitles." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to expose my server to the internet?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No more than your current setup. KenjaPlayer connects exactly like any client you already use — on your LAN, or through the remote access (Tailscale, VPN, port forward) you already have. Nothing is proxied through us." }
+          },
+          {
+            "@type": "Question",
+            "name": "Will AI features hammer my server?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No — AI runs on your playback device, not on the server. Your Jellyfin or NAS just streams video as usual." }
+          }
+        ]
       }
     ]
   }
@@ -70,12 +90,12 @@
 </header>
 
 <main>
-  <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="./index.html">index</a><span class="sep">/</span>media-servers</nav></div>
+  <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="./index.html">Home</a><span class="sep">/</span>media-servers</nav></div>
 
   <section class="sub-hero">
     <div class="wrap">
       <span class="cue">04 · SOURCES &nbsp;·&nbsp; 00:00.000 --&gt; 00:05.000</span>
-      <h1>Your media. Wherever it lives.</h1>
+      <h1>Stream Jellyfin, Plex &amp; SMB. With live AI subtitles on top.</h1>
       <p class="lede">KenjaPlayer streams straight from the places your collection already lives — Jellyfin, Plex, Emby, SMB shares, WebDAV, FTP — and then does what no other client does: runs live AI subtitles and summaries on top of your own library. Connections are direct, device to server. Nothing routes through us, because there is no "us" in the middle.</p>
       <div class="hero-ctas">
         <a class="as-badge" data-store href="https://apps.apple.com/app/id6792728329" rel="noopener" aria-label="Download KenjaPlayer on the App Store">
