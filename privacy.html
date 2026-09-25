@@ -283,8 +283,7 @@
   var btns=[].slice.call(document.querySelectorAll('[data-lang-btn]'));
   if(!secs.length||!btns.length)return;
   var saved=null;try{saved=localStorage.getItem('privacy-lang')}catch(e){}
-  var nav=(navigator.language||'en').toLowerCase();
-  var init=saved||(nav.indexOf('zh')===0?'zh-Hans':nav.indexOf('ja')===0?'ja':'en');
+  var init=saved||'en';
   function show(lang){
     secs.forEach(function(s){s.hidden=s.getAttribute('data-lang')!==lang});
     btns.forEach(function(b){var on=b.getAttribute('data-lang-btn')===lang;b.setAttribute('aria-pressed',on?'true':'false')});
