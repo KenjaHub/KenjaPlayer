@@ -22,9 +22,22 @@ Wired to `https://apps.apple.com/app/id6792728329` (App ID `6792728329`). To cha
 
 - `assets/img/` — web-compressed JPEGs generated from the App Store Keynote screenshots (`mac-*.jpg` / `ios-*.jpg` / `ipad-*.jpg`) plus `app-icon.png` (from the asset catalog) and `appstore-badge.svg` (official Apple asset — use as provided).
 - Regenerate with `sips --resampleWidth <w> -s format jpeg -s formatOptions <q> <src> --out <dst>` (widths: iOS 660, iPad 1440, Mac 1440).
-- `mac-hero.jpg` is generated from Mac slide 1 (hero). It was once a black-background variant of that slide; the current Keynote no longer exports one, so it's the same image as `mac-001.jpg`.
+- `mac-hero.jpg` is generated from the hero slide of whatever deck is current. Since the Oct 2026 deck swap it comes from `kenjaplayer-mac-en.001.png` and is **no longer identical** to `mac-001.jpg` (which is still the Sep 2026 deck's hero).
 
-### Slide numbering → theme (keep HTML `src` aligned with this)
+### Homepage images — Oct 2026 deck (`~/Desktop/kenjaplayer-keynote/kenjaplayer-mac-en`, 6 slides)
+
+The homepage uses semantically named files generated from this newer deck; subpages still use the Sep 2026 slide-numbered set below.
+
+| New slide | Theme | Site file(s) |
+|---|---|---|
+| 001 | Realtime AI Translation (hero, dual subtitles) | `mac-hero.jpg`, `mac-ai-subtitles.jpg` |
+| 002 | Manage & Play Local Videos (formats) | — |
+| 003 | All Your Media, One Player (SMB/WebDAV/FTP/Plex/Emby/Jellyfin) | `mac-media-servers.jpg` |
+| 004 | Fully Offline (privacy) | `mac-privacy.jpg` |
+| 005 | Beautiful HD Playback, 4K & 8K | `mac-band.jpg`, `mac-playback.jpg` |
+| 006 | AI Video Summaries in Seconds | `mac-ai-summary.jpg` |
+
+### Slide numbering → theme (Sep 2026 deck — still used by subpages; keep HTML `src` aligned with this)
 
 | # | iOS / iPad | Mac |
 |---|---|---|
@@ -38,7 +51,7 @@ Wired to `https://apps.apple.com/app/id6792728329` (App ID `6792728329`). To cha
 | 8 | — | Smart Controls |
 | 9 | — | solid black (unused) |
 
-Site usage: `index.html` → mac-hero (hero shot) + mac-002 (hero band), mac-002, mac-007, mac-006, mac-005, mac-004 · `ai-subtitles.html` → mac-002, mac-003, ios-002 · `ai-summary.html` → mac-007, ipad-007, ios-007 · `video-formats.html` → mac-006, ios-005 · `media-servers.html` → mac-005, ipad-002.
+Site usage: `index.html` → mac-hero + mac-band, mac-ai-subtitles, mac-ai-summary, mac-playback, mac-media-servers, mac-privacy (all from the Oct 2026 deck) · `ai-subtitles.html` → mac-002, mac-003, ios-002 · `ai-summary.html` → mac-007, ipad-007, ios-007 · `video-formats.html` → mac-006, ios-005 · `media-servers.html` → mac-005, ipad-002 (all from the Sep 2026 deck).
 
 ## SEO files
 
