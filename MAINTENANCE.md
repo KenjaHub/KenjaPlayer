@@ -61,7 +61,7 @@ Site usage: `index.html` → mac-hero + mac-band, mac-ai-subtitles, mac-ai-summa
 
 ## Localized homepages (SEO)
 
-The homepage exists in 9 languages — `index.html` (EN, also `hreflang` x-default) plus `zh-Hans/`, `zh-Hant/`, `ja/`, `ko/`, `es/`, `pt/`, `id/`, `vi/` directories, each with its own `index.html`, canonical URL, translated title/description/OG/JSON-LD, and a footer language row (`.foot-langs` in `style.css`). Every version carries the same 10-link `hreflang` cluster in `<head>`.
+The homepage exists in 9 languages — `index.html` (EN, also `hreflang` x-default) plus `zh-Hans/`, `zh-Hant/`, `ja/`, `ko/`, `es/`, `pt/`, `id/`, `vi/` directories, each with its own `index.html`, canonical URL, translated title/description/OG/JSON-LD, and a header language dropdown (`.lang-select` in `style.css`, handler in `main.js`). Every version carries the same 10-link `hreflang` cluster in `<head>`.
 
 - Only the homepage is localized; subpages (`ai-subtitles.html` etc.) are EN-only — localized pages link to them with root-absolute paths (`/ai-subtitles.html`).
 - When editing the EN homepage copy, mirror the change into all 8 localized files (or at least re-check them); keep the hreflang cluster and `.foot-langs` row identical across versions.

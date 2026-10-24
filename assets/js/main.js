@@ -46,3 +46,10 @@ document.querySelectorAll(".rv").forEach((el) => io.observe(el));
 document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
+
+// header language switcher (localized homepages)
+document.querySelectorAll("select.lang-select").forEach((sel) => {
+  sel.addEventListener("change", () => {
+    if (sel.value) window.location.href = sel.value;
+  });
+});
