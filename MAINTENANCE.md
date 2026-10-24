@@ -66,6 +66,7 @@ The homepage exists in 9 languages — `index.html` (EN, also `hreflang` x-defau
 - Only the homepage is localized; subpages (`ai-subtitles.html` etc.) are EN-only — localized pages link to them with root-absolute paths (`/ai-subtitles.html`).
 - When editing the EN homepage copy, mirror the change into all 8 localized files (or at least re-check them); keep the hreflang cluster and `.foot-langs` row identical across versions.
 - `privacy.html` is a separate single noindex page with a client-side 9-language switcher — unrelated to these SEO pages.
+- `style.css` / `main.js` are referenced with a `?v=YYYYMMDD` cache-buster (GitHub Pages caches assets for 10 min). **Whenever you change either file, bump the version in every HTML file** (root pages + language dirs), or visitors may get stale JS against fresh HTML.
 
 ## SEO checklist (post-launch)
 
