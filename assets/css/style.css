@@ -567,6 +567,17 @@ footer.site-foot { border-top: 1px solid var(--line-soft); padding: 56px 0 40px;
 }
 .foot-col a { display: block; color: var(--dim); font-size: 14px; padding: 5px 0; }
 .foot-col a:hover { color: var(--ink); text-decoration: none; }
+
+/* language switcher row (localized homepages) */
+.foot-langs {
+  display: flex; flex-wrap: wrap; gap: 8px 18px;
+  margin-top: 26px; padding-top: 18px;
+  border-top: 1px solid var(--line-soft);
+  font-size: 13px;
+}
+.foot-langs a { color: var(--dim); }
+.foot-langs a:hover { color: var(--ink); text-decoration: none; }
+.foot-langs a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .foot-legal {
   display: flex; flex-wrap: wrap; gap: 10px 26px;
   justify-content: space-between;

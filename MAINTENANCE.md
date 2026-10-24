@@ -59,6 +59,14 @@ Site usage: `index.html` → mac-hero + mac-band, mac-ai-subtitles, mac-ai-summa
 - If the domain ever changes: global find-and-replace of `https://kenjaplayer.kofukuai.com` across all HTML + `sitemap.xml` + `robots.txt`, and update `CNAME`.
 - New pages: add a `<url>` entry to `sitemap.xml` and link them from existing pages.
 
+## Localized homepages (SEO)
+
+The homepage exists in 9 languages — `index.html` (EN, also `hreflang` x-default) plus `zh-Hans/`, `zh-Hant/`, `ja/`, `ko/`, `es/`, `pt/`, `id/`, `vi/` directories, each with its own `index.html`, canonical URL, translated title/description/OG/JSON-LD, and a footer language row (`.foot-langs` in `style.css`). Every version carries the same 10-link `hreflang` cluster in `<head>`.
+
+- Only the homepage is localized; subpages (`ai-subtitles.html` etc.) are EN-only — localized pages link to them with root-absolute paths (`/ai-subtitles.html`).
+- When editing the EN homepage copy, mirror the change into all 8 localized files (or at least re-check them); keep the hreflang cluster and `.foot-langs` row identical across versions.
+- `privacy.html` is a separate single noindex page with a client-side 9-language switcher — unrelated to these SEO pages.
+
 ## SEO checklist (post-launch)
 
 - [x] Google Search Console verified (`google*.html` at repo root) — property `https://kenjaplayer.kofukuai.com`
