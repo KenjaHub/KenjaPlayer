@@ -31,6 +31,7 @@ Watch any movie, show or lecture in any language. KenjaPlayer listens, transcrib
 ## Links
 
 - 🌐 **Website** — <https://kenjaplayer.kofukuai.com>
+- [Terms of Use](terms.md) · [Privacy Policy](privacy.md)
 - 📩 **Contact** — [kenjaplayer@kofukuai.com](mailto:kenjaplayer@kofukuai.com)
 
 ---
