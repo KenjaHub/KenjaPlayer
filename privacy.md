@@ -1,6 +1,6 @@
 # KenjaPlayer Privacy Policy
 
-**Last Updated:** July 28, 2026
+**Last Updated:** November 27, 2026
 
 At KenjaPlayer, we are committed to protecting your privacy. This Privacy Policy describes how KenjaPlayer handles your data across all supported platforms (macOS, iOS, and tvOS).
 
@@ -16,7 +16,7 @@ KenjaPlayer allows you to connect to your self-hosted media servers (such as Jel
 - **Credentials Stored Locally**: Your server URLs, usernames, and authentication tokens are stored only on your device and are never transmitted to us or any third party.
 
 ## 3. AI Models
-All AI models used for speech recognition and subtitle generation are bundled within the app. No model downloads or network connections are required for AI features to function.
+AI models for speech recognition and subtitle generation are downloaded separately from the app. An internet connection is required to download the models. Once downloaded, the models run locally on your device.
 
 ## 4. Third-Party Services
 KenjaPlayer does not integrate any third-party analytics SDKs, user tracking tools, telemetry frameworks, or advertising libraries. We do not track your behavior inside the app.
